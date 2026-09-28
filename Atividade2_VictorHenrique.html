@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Estudos</title>
+</head>
+
+<body>
+    <h1>Pesquisa de Opnião</h1>
+    <p>Nessa pesquisa você será questionado sobre o produto X. Esse produto é vendido em todo o país nas perfumarias,
+        lojas de departamento, internet entre outros. Responda as questões abaixo de acordo com sua opnião.</p>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <form>
+            <input type="text" name="text" placeholder="Digite seu nome"><br><br>
+            <input type="number" name="number" placeholder="Digite sua idade"><br><br>
+            <input type="email" name="email" placeholder="Digite seu email"><br><br>
+            Data de nascimento<br><input type="date" name="data"><br><br>
+            Digite uma senha para acessar os dados da pesquisa posteriormente:<br>
+            <input type="password" name="senha" placeholder="Digite uma senha"><br><br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Aspecto do Produto</legend>
+        <form>
+            Selecione a cor do produto após 6 meses de uso:<br>
+            <input type="color" name="cor" value="0000ff"><br><br>
+            Adicione uma foto do seu produto:<br><input type="file" name="Arquivo"><br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Opnião quanto a atualização</legend>
+        <form>
+            Você gosta do cheiro do Produto?<br>
+            <input type="radio" name="opnião" value="Gosto muito">Gosto muito<br>
+            <input type="radio" name="opnião" value="Gosto">Gosto<br>
+            <input type="radio" name="opnião" value="Não sei">Não sei<br>
+            <input type="radio" name="opnião" value="Não gosto">Não gosto<br>
+            <input type="radio" name="opnião" value="Odeio">Odeio<br><br>
+
+            Marque as características do produto que você mais gosta:<br>
+            <input type="checkbox" name="opção" value="">Fixação<br>
+            <input type="checkbox" name="opção" value="Dura">Textura<br>
+            <input type="checkbox" name="opção" value="Não sei">Cheiro<br>
+            <input type="checkbox" name="opção" value="Não dura">Cor<br>
+            <input type="checkbox" name="opção" value="Odeio">Embalagem<br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Nível de satisfação</legend>
+        <form>
+            Coloque nessa escala o seu nível de satisfação geral do produto:<br>
+            <input type="range" name="satisfacao" min="0" max="10"><br><br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Opniões</legend>
+        <form>
+            Digite abaixo sua opnião geral para esse produto:<br>
+            <textarea name="opiniao" placeholder="Digite sua opinião sobre o produto..."></textarea><br><br>
+        </form>
+    </fieldset>
+    <br>
+    <form>
+        <input type="button" value="Gravar respostas" onclick="msg()">
+    </form>
+    <script>
+        function msg() {
+            alert("Você gravou suas respostas!");
+        }
+    </script>
+
+</html>
